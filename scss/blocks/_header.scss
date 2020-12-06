@@ -17,6 +17,7 @@
 		transform: translate(-50%, 50%);
 	}
 }
+//================Nav=================
 .nav {
 	width: 100%;
 	display: flex;
@@ -31,17 +32,46 @@
 		width: 133px;
 		display: flex;
 		justify-content: center;
-		padding: 40px 0;
+		align-items: center;
 		color: $white;
-		font-weight: bold;
 		font-size: 12px;
 		line-height: 18px;
 		text-transform: uppercase;
 	}
 }
-.intro {
-	position: relative;
-	min-height: 100vh;
-	background: url(/img/header-bg-min.jpg) no-repeat center;
-	background-size: cover;
+//=================Main======================
+.main {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	text-transform: uppercase;
+	// .main__suptittle
+	&__suptittle {
+		font-size: 12px;
+		line-height: 14px;
+		letter-spacing: 0.5em;
+	}
+	// .main__title
+	&__title {
+		position: relative;
+		font-family: 'Banny';
+		font-size: 96px;
+		margin-bottom: 35px;
+		&:after {
+			content: '';
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			transform: translate(-50%, 0);
+			width: 60px;
+			height: 5px;
+			border-radius: 50px;
+			background-color: $yellow;
+		}
+	}
+	// .main__footer
+	&__footer {
+		display: flex;
+		justify-content: center;
+	}
 }
