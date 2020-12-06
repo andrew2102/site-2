@@ -39,39 +39,3 @@
 		text-transform: uppercase;
 	}
 }
-//=================Main======================
-.main {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	text-transform: uppercase;
-	// .main__suptittle
-	&__suptittle {
-		font-size: 12px;
-		line-height: 14px;
-		letter-spacing: 0.5em;
-	}
-	// .main__title
-	&__title {
-		position: relative;
-		font-family: 'Banny';
-		font-size: 96px;
-		margin-bottom: 35px;
-		&:after {
-			content: '';
-			position: absolute;
-			left: 50%;
-			bottom: 0;
-			transform: translate(-50%, 0);
-			width: 60px;
-			height: 5px;
-			border-radius: 50px;
-			background-color: $yellow;
-		}
-	}
-	// .main__footer
-	&__footer {
-		display: flex;
-		justify-content: center;
-	}
-}
