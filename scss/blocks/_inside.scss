@@ -1,0 +1,25 @@
+.inside {
+	display: flex;
+	min-height: 360px;
+
+	&__img1 {
+		width: 100%;
+		background: url(../img/events1-min.png) no-repeat center;
+		background-size: cover;
+	}
+	&__img2 {
+		width: 100%;
+		background: url(../img/events2-min.png) no-repeat center;
+		background-size: cover;
+	}
+	&__img3 {
+		width: 100%;
+		background: url(../img/events3-min.png) no-repeat center;
+		background-size: cover;
+	}
+	&__img4 {
+		width: 100%;
+		background: url(../img/events4-min.png) no-repeat center;
+		background-size: cover;
+	}
+}

@@ -33,9 +33,30 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		color: $white;
-		font-size: 12px;
-		line-height: 18px;
-		text-transform: uppercase;
+
+		a {
+			color: $yellow;
+			font-size: 12px;
+			line-height: 18px;
+			text-transform: uppercase;
+		}
 	}
+}
+//==================Team================
+.team {
+	height: 100%;
+	background: url(../img/team-bg-min.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.specialties {
+	height: 100%;
+	background: url(../img/specialties-bg-min.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.events {
+	height: 100%;
+	background: url(../img/specialties-bg-min.jpg) no-repeat center;
+	background-size: cover;
 }

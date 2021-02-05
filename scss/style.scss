@@ -1,5 +1,6 @@
 @import 'vars';
 @import 'fonts';
+@import 'media';
 @import 'vendor/nullstyle';
 
 html {
@@ -7,7 +8,6 @@ html {
 }
 
 body {
-	// background-color: $primary;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	font-size: 1.4rem;
@@ -16,10 +16,28 @@ body {
 }
 
 ._container {
-	max-width: $mw + px;
+	max-width: 1300px;
 	margin: 0 auto;
 	padding: 0 10px;
 	overflow: hidden;
+}
+
+.text-info {
+	text-align: center;
+	color: rgba($graphite, 0.5);
+	font-weight: 400;
+	font-size: 13px;
+	&--events {
+		color: rgba($white, 0.5);
+	}
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.map {
+	margin-top: 100px;
 }
 
 @import 'blocks/header';
@@ -27,3 +45,8 @@ body {
 @import 'blocks/intro';
 @import 'blocks/main';
 @import 'blocks/about';
+@import 'blocks/form';
+@import 'blocks/slider';
+@import 'blocks/menu';
+@import 'blocks/inside';
+@import 'blocks/footer';
