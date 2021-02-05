@@ -1,0 +1,117 @@
+.form {
+	min-width: 565px;
+	// .form--contacts
+	&--contacts {
+		max-width: 1300px;
+	}
+	// .form__item
+	&__item {
+		// width: 49.1%;
+		border-radius: 5px;
+		background: #e5e5e5;
+		padding: 21px;
+		margin: 5px 0;
+		// .form__item--contacts
+		&--contacts {
+			width: 32.9%;
+		}
+		&::placeholder {
+			font-family: 'Open Sans', sans-serif;
+			font-size: 14px;
+			line-height: 19px;
+			color: rgba($graphite, 0.5);
+		}
+	}
+	// .form__fields
+	&__fields {
+		display: flex;
+		justify-content: space-between;
+	}
+	// .form__contacts
+	&__contacts {
+		display: flex;
+		align-items: center;
+		a {
+			font-size: 13px;
+			color: rgba($graphite, 0.5);
+		}
+	}
+	// .form__column
+	&__column {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		&:first-child {
+			margin-right: 10px;
+		}
+	}
+	// .form__textarea
+	&__textarea {
+		width: 100%;
+		min-height: 120px;
+		border-radius: 5px;
+		background: #e5e5e5;
+		padding: 21px;
+		resize: none;
+		margin-top: 5px;
+		&::placeholder {
+			font-family: 'Open Sans', sans-serif;
+			font-size: 14px;
+			line-height: 19px;
+			color: rgba($graphite, 0.5);
+		}
+	}
+	// .form__location
+	&__location {
+		&:before {
+			content: '\f041';
+			font-family: 'icomoon';
+			color: $yellow;
+			margin-right: 5px;
+			margin-left: 10px;
+		}
+	}
+	// .form__phone
+	&__phone {
+		&:before {
+			content: '\f095';
+			font-family: 'icomoon';
+			color: $yellow;
+			margin-right: 5px;
+			margin-left: 10px;
+		}
+	}
+	// .form__email
+	&__email {
+		&:before {
+			content: '\f0e0';
+			font-family: 'icomoon';
+			color: $yellow;
+			margin-right: 5px;
+			margin-left: 10px;
+		}
+	}
+	// .form__submit
+	&__submit {
+		width: 100%;
+		text-align: center;
+		border-radius: 5px;
+		background: $yellow;
+		padding: 20px;
+		margin-top: 5px;
+
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 20px;
+		color: $white;
+		text-transform: uppercase;
+		&:hover,
+		&:focus {
+			background-color: lighten($yellow, 5%);
+		}
+		// .form__submit--contacts
+		&--contacts {
+			width: 48%;
+		}
+	}
+}
