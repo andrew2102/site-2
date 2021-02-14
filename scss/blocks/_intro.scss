@@ -1,6 +1,5 @@
 .intro {
-	background: url(../img/header-bg-min.jpg) no-repeat center;
-	background-size: cover;
+	background: url(../img/header-bg-min.jpg) center / cover no-repeat;
 	color: $white;
 	// .intro__wrapper
 	&__wrapper {
