@@ -11,6 +11,10 @@
 			color: $white;
 			flex-direction: row-reverse;
 		}
+		// .main__block--team
+		&--team {
+			padding-bottom: 50px;
+		}
 		// .main__block--menu
 		&--menu {
 			justify-content: center;
@@ -41,6 +45,9 @@
 		align-items: center;
 		text-align: center;
 		max-width: 600px;
+		&-form {
+			min-width: 44%;
+		}
 	}
 	// .main__title
 	&__title {
@@ -109,9 +116,5 @@
 	&__footer {
 		display: flex;
 		justify-content: center;
-	}
-	// .main__bottom
-	&__bottom {
-		height: 50px;
 	}
 }

@@ -1,22 +1,21 @@
 .intro {
-	// padding-top: 326px;
-	min-height: 800px;
 	background: url(../img/header-bg-min.jpg) no-repeat center;
 	background-size: cover;
 	color: $white;
 	// .intro__wrapper
 	&__wrapper {
+		min-height: 800px;
+		padding-top: 100px;
 		position: relative;
-		padding-top: 326px;
-		padding-bottom: 225px;
 		display: flex;
 		justify-content: center;
+		align-items: center;
 	}
 	// .intro__shedule
 	&__shedule {
 		position: absolute;
-		left: 0;
-		top: 72%;
+		left: 1%;
+		top: 73%;
 		// height: 100%;
 		transform: rotate(-90deg);
 		transform-origin: left top;
@@ -27,7 +26,7 @@
 	// .intro__social
 	&__social {
 		position: absolute;
-		right: 0;
+		right: 1%;
 		top: 42%;
 		// .intro__social-item
 		&-item {

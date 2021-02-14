@@ -11,8 +11,8 @@
 		<div class="page">
 			<!-- Header -->
 			<header class="header">
-				<header class="header__container _container">
-					<nav class="nav" id="nav">
+				<div class="header__container _container">
+					<nav class="nav burger__menu" id="nav">
 						<ul class="nav__list">
 							<li class="nav__item intro__home">
 								<a href="#" data-scroll="#intro">Home</a>
@@ -33,12 +33,15 @@
 							<li class="nav__item"><a href="#" data-scroll="#contacts">Contact</a></li>
 						</ul>
 					</nav>
-				</header>
+					<button class="burger">
+						<span class="burger__item"></span>
+					</button>
+					<a class="burger__title" href="#" data-scroll="#intro">Hungry People</a>
+				</div>
 			</header>
 			<!-- Intro -->
 			<div class="intro" id="intro">
 				<div class="intro__wrapper _container">
-					<div class="intro__shedule">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</div>
 					<div class="main">
 						<div class="main__suptitle">RESTAURANT</div>
 						<h1 class="main__title">hungry people</h1>
@@ -64,6 +67,7 @@
 							</a>
 						</li>
 					</ul>
+					<div class="intro__shedule">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</div>
 				</div>
 			</div>
 			<!-- About -->
@@ -87,12 +91,11 @@
 					</div>
 				</div>
 			</div>
-			<div class="main__bottom"></div>
 			<!-- Team -->
 			<div class="team" id="team">
 				<div class="main__suptitle main__suptitle--dark">OUR TEAM</div>
-				<div class="main__block main__block--dark _container">
-					<div class="main__content">
+				<div class="main__block main__block--dark main__block--team _container">
+					<div class="main__content main">
 						<h2 class="main__title main__title--sm">MASTER CHEF</h2>
 						<div class="main__subtitle">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus,
@@ -109,24 +112,25 @@
 						<img src="img/team-min.png" alt="" />
 					</div>
 				</div>
-				<div class="main__bottom"></div>
 			</div>
 			<!-- Booking -->
 			<div class="booking" id="booking">
 				<div class="main__block _container">
-					<div class="main__content">
+					<div class="main__content main__content-form">
 						<h2 class="main__title main__title--sm">book a table</h2>
 						<form class="form" action="/signup" method="POST">
 							<div class="form__fields">
-								<div class="form__column">
+								<div class="form__row">
 									<input class="form__item" type="text" placeholder="Name" />
 									<input class="form__item" type="tel" placeholder="Phone" />
-									<input class="form__item" type="date" placeholder="Date (mm/dd)" />
 								</div>
-								<div class="form__column">
+								<div class="form__row">
 									<input class="form__item" type="email" placeholder="Email" />
 									<input class="form__item" type="text" placeholder="People" />
-									<input class="form__item" type="time" placeholder="Time" />
+								</div>
+								<div class="form__row">
+									<input class="form__item" type="date" />
+									<input class="form__item" type="time" />
 								</div>
 							</div>
 							<button class="form__submit" type="submit">BOOK NOW</button>
@@ -136,7 +140,7 @@
 						<img src="img/book-table-min.png" alt="" />
 					</div>
 				</div>
-				<div class="main__bottom text-info">
+				<div class="text-info">
 					Mon - Fri: <b>8PM - 10PM</b>, Sat - Sun: <b>8PM - 3AM</b>, Phone:
 					<b>+40 729 131 637/+40726 458 782</b>
 				</div>
@@ -208,7 +212,6 @@
 						</div>
 					</div>
 				</div>
-				<div class="main__bottom"></div>
 			</div>
 			<!-- Menu -->
 			<div class="menu _container" id="menu">
@@ -418,32 +421,29 @@
 						<img src="img/weddings-min.png" alt="" />
 					</div>
 				</div>
-				<div class="main__bottom text-info text-info--events">
+				<div class="text-info text-info--events">
 					For private events please call: <b>+40 729 131 637/+40 726 458 782</b> or use the
 					contact form.
 				</div>
 			</div>
 			<!-- Inside -->
-			<div class="inside" id="gallery">
-				<div class="inside__img1"></div>
-				<div class="inside__img2"></div>
-				<div class="inside__img3"></div>
-				<div class="inside__img4"></div>
-			</div>
-			<!-- <div class="slider">
-				<div class="slider__item">
+			<div class="inside">
+				<div class="inside__item">
 					<img src="img/events1-min.png" alt="" />
 				</div>
-				<div class="slider__item">
+				<div class="inside__item">
 					<img src="img/events2-min.png" alt="" />
 				</div>
-				<div class="slider__item">
+				<div class="inside__item">
 					<img src="img/events3-min.png" alt="" />
 				</div>
-				<div class="slider__item">
+				<div class="inside__item">
 					<img src="img/events4-min.png" alt="" />
 				</div>
-			</div> -->
+				<div class="inside__item">
+					<img src="img/events2-min.png" alt="" />
+				</div>
+			</div>
 			<!-- Contacts -->
 			<div class="contacts" id="contacts">
 				<div class="main__block main__block--menu _container">
@@ -456,24 +456,33 @@
 					</div>
 				</div>
 				<form class="form form--contacts _container" action="/signup" method="POST">
-					<div class="form__fields">
+					<div class="form__fields form__fields-contact">
 						<input class="form__item form__item--contacts" type="text" placeholder="Name" />
 						<input class="form__item form__item--contacts" type="email" placeholder="Email" />
 						<input class="form__item form__item--contacts" type="tel" placeholder="Phone" />
 					</div>
-					<textarea class="form__textarea" name="" id="" placeholder="Message"></textarea>
-					<div class="form__fields">
-						<div class="form__contacts">
-							<a href="#" class="form__location">5th London Boulevard, U.K.</a>
-							<!-- <i class="fas fa-map-marker-alt"></i> -->
-							<a href="#" class="form__phone">+40 729 131 637/+40 726 458 782</a>
-							<!-- <i class="fas fa-phone"></i> -->
-							<a href="#" class="form__email">office@mindblister.com</a>
-							<!-- <i class="far fa-envelope"></i> -->
-						</div>
+					<textarea
+						class="form__textarea"
+						name="message"
+						id="form-message"
+						placeholder="Message"
+					></textarea>
+					<div class="form__fields form__fields-contact">
 						<button class="form__submit form__submit--contacts" type="submit">
 							SEND MESSAGE
 						</button>
+						<div class="form__contacts">
+							<a href="#" class="form__icon form__icon-location"
+								>5th London Boulevard, U.K.</a
+							>
+							<!-- <i class="fas fa-map-marker-alt"></i> -->
+							<a href="#" class="form__icon form__icon-phone"
+								>+40 729 131 637/+40 726 458 782</a
+							>
+							<!-- <i class="fas fa-phone"></i> -->
+							<a href="#" class="form__icon form__icon-email">office@mindblister.com</a>
+							<!-- <i class="far fa-envelope"></i> -->
+						</div>
 					</div>
 				</form>
 			</div>
@@ -481,10 +490,8 @@
 			<div class="map">
 				<iframe
 					src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3592.9668521584963!2d30.524107239773123!3d50.44834179692469!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce549257acfb%3A0x8d2070a5d66c0e0b!2z0JTQvtC8INGBINGF0LjQvNC10YDQsNC80Lg!5e0!3m2!1sru!2sua!4v1611910833874!5m2!1sru!2sua"
-					width="100%"
-					height="475px"
-					frameborder="0"
-					style="border: 0"
+					style="width: 100%; border: 0"
+					height="475"
 					allowfullscreen=""
 					aria-hidden="false"
 					tabindex="0"

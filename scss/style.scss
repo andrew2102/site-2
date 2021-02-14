@@ -1,6 +1,5 @@
 @import 'vars';
 @import 'fonts';
-@import 'media';
 @import 'vendor/nullstyle';
 
 html {
@@ -15,6 +14,10 @@ body {
 	color: $black;
 }
 
+.page {
+	overflow: hidden;
+}
+
 ._container {
 	max-width: 1300px;
 	margin: 0 auto;
@@ -22,18 +25,30 @@ body {
 	overflow: hidden;
 }
 
+.burger,
+.burger__title {
+	display: none;
+}
+
 .text-info {
 	text-align: center;
 	color: rgba($graphite, 0.5);
 	font-weight: 400;
 	font-size: 13px;
+	height: 50px;
 	&--events {
 		color: rgba($white, 0.5);
+		height: 50px;
 	}
 }
 
 .hidden {
 	visibility: hidden;
+}
+
+.about {
+	display: flex;
+	justify-content: space-between;
 }
 
 .map {
@@ -44,9 +59,9 @@ body {
 @import 'blocks/btn';
 @import 'blocks/intro';
 @import 'blocks/main';
-@import 'blocks/about';
 @import 'blocks/form';
 @import 'blocks/slider';
 @import 'blocks/menu';
 @import 'blocks/inside';
 @import 'blocks/footer';
+@import 'blocks/media';

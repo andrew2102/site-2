@@ -1,12 +1,13 @@
 .form {
-	min-width: 565px;
+	// min-width: 565px;
+	width: 100%;
 	// .form--contacts
 	&--contacts {
 		max-width: 1300px;
 	}
 	// .form__item
 	&__item {
-		// width: 49.1%;
+		width: 49.1%;
 		border-radius: 5px;
 		background: #e5e5e5;
 		padding: 21px;
@@ -26,6 +27,10 @@
 	&__fields {
 		display: flex;
 		justify-content: space-between;
+		flex-direction: column;
+		&-contact {
+			flex-direction: row-reverse;
+		}
 	}
 	// .form__contacts
 	&__contacts {
@@ -36,15 +41,25 @@
 			color: rgba($graphite, 0.5);
 		}
 	}
-	// .form__column
-	&__column {
+	// .form__row
+	&__row {
 		width: 100%;
 		display: flex;
-		flex-direction: column;
+		justify-content: space-between;
+		// flex-direction: column;
 		&:first-child {
-			margin-right: 10px;
+			// margin-right: 10px;
 		}
 	}
+	// .form__column
+	// &__column {
+	// 	width: 100%;
+	// 	display: flex;
+	// 	flex-direction: column;
+	// 	&:first-child {
+	// 		margin-right: 10px;
+	// 	}
+	// }
 	// .form__textarea
 	&__textarea {
 		width: 100%;
@@ -61,34 +76,22 @@
 			color: rgba($graphite, 0.5);
 		}
 	}
-	// .form__location
-	&__location {
+	// .form__icon
+	&__icon {
 		&:before {
+			font-family: 'icomoon';
+			color: $yellow;
+			margin-right: 5px;
+			margin-left: 10px;
+		}
+		&-location:before {
 			content: '\f041';
-			font-family: 'icomoon';
-			color: $yellow;
-			margin-right: 5px;
-			margin-left: 10px;
 		}
-	}
-	// .form__phone
-	&__phone {
-		&:before {
+		&-phone:before {
 			content: '\f095';
-			font-family: 'icomoon';
-			color: $yellow;
-			margin-right: 5px;
-			margin-left: 10px;
 		}
-	}
-	// .form__email
-	&__email {
-		&:before {
+		&-email:before {
 			content: '\f0e0';
-			font-family: 'icomoon';
-			color: $yellow;
-			margin-right: 5px;
-			margin-left: 10px;
 		}
 	}
 	// .form__submit
@@ -111,7 +114,7 @@
 		}
 		// .form__submit--contacts
 		&--contacts {
-			width: 48%;
+			width: 50%;
 		}
 	}
 }

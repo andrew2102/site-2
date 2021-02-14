@@ -1,5 +1,5 @@
 $(function () {
-	//  Burger menu
+	// Burger menu
 	$('.burger').click(function (event) {
 		$('.burger,.burger__menu').toggleClass('active');
 		$('body').toggleClass('lock');
@@ -10,7 +10,7 @@ $(function () {
 		$('body').removeClass('lock');
 	});
 
-	/* Visible Logo */
+	// Visible Logo
 	let scrollOffset = $(window).scrollTop();
 	checkScroll(scrollOffset);
 
@@ -37,8 +37,6 @@ $(function () {
 	});
 
 	$('.inside').slick({
-		// arrows: false,
-		// dots: true,
 		slidesToShow: 4,
 		easing: 'ease',
 	});
@@ -52,7 +50,7 @@ $(function () {
 
 		$('html, body').animate(
 			{
-				scrollTop: elementOffset,
+				scrollTop: elementOffset - 40,
 			},
 			700
 		);
